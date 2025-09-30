@@ -4,22 +4,119 @@
     <meta charset="UTF-8">
     <title>Table Of Contents</title>
     <style>
+        .container{
+            width: 1080px;
+            margin: auto;
+        }
+
+        .header{
+            background-color: lemonchiffon;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+        }
+
+        .header h1{
+            padding-top: 50px;
+        }
+
+
+        .navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333
+        }
+
+        .navbar ul li{
+            float: left;
+        }
+
+        .navbar ul li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        .navbar ul li a:hover{
+            background-color: #111;
+        }
+
+        .content{
+            width: 100%;
+        }
+
+        .right{
+            width:55%;
+            float: left;
+        }
+
+        .card{
+            width: 46%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+            transition: .3s;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .card:hover{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+        }
+
+        .caption{
+            padding: 2px 16px;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
 
     </style>
 </head>
 <body>
-<h1>Table of Contents</h1>
-<ol>
-    <li><a href="basicTargeting.html>">Basic Targeting</a></li>
-    <li><a href="layout.html">2-Column Layout</a></li>
-    <li><a href="3columnLayout.html">3-Column Layout</a></li>
-    <li><a href="boxModel.html">Box Model</a></li>
-    <li><a href="cards.html">Cards Example</a></li>
-</ol>
-<div>
-    Hello World - Look at my CSS!
+<div class="container">
+    <div class="header">
+        <h1>Table of Contents</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="basicTargeting.html">Basic Targeting</a></li>
+            <li><a href="layout.html">2-Column Layout</a></li>
+            <li><a href="3columnLayout.html">3-Column Layout</a></li>
+            <li><a href="boxModel.html">Box Model</a></li>
+            <li><a href="cards.html">Cards Example</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p>Here are some examples of image manipulations in CSS. See the links on this page for more information.</p>
+
+        <div class="card">
+            <img src="img/yea.png" alt="YES!!!" />
+                <div class="caption">
+                    <h4><b>apple</b></h4>
+                    <p>good taste and is red</p>
+                </div>
+        </div>
+
+        <div class="card">
+            <img src="img/aes.png" alt="YES!!!" />
+                <div class="caption">
+                    <h4><b>banana</b></h4>
+                    <p>When one isn't enough banana is another fruit</p>
+                </div>
+        <div>
+
+    </div>
+
+    <div class="footer">
+        Copyright © 2025 Vernon Township School District . All rights reserved.
+    </div>
 
 </div>
-
 </body>
 </html>
