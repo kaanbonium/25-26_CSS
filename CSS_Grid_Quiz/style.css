@@ -1,0 +1,69 @@
+/* Add all your styles here */
+
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    padding: 100px;
+    background-color: lightgray;
+    width: 80%;
+    margin: auto;
+    gap: 25px 25px;
+}
+
+
+
+.site-header{
+    grid-column: 1/ span 3;
+    text-align: center;
+    font-size: 35px;
+    background-color: lightblue;
+
+
+}
+
+
+
+.main-nav {
+    grid-column: 1;
+    background-color: #DEDEDE;
+    padding: 50px;
+    height: 400px;
+    font-size: 20px;
+
+}
+
+
+
+.main-content {
+    grid-column: 2;
+    width: 95%;
+    margin: auto;
+    padding: 50px;
+    background-color: #EDEDED !important;
+    height: 400px;
+    font-size: 20px;
+    grid-row: 2;
+
+
+}
+
+
+.site-sidebar {
+    grid-column: 3;
+    background-color: #DEDEDE;
+    padding: 50px;
+    height: 400px;
+    font-size: 20px;
+
+}
+
+.site-footer {
+    grid-column: 1/ span 3;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    background-color: #7183E0;
+    width: 100%;
+    height: 125px;
+
+}
