@@ -1,18 +1,25 @@
 .container{
     width: 1080px;
     margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns:1fr 3fr;
 }
 
+
 .header{
-    background-color: lemonchiffon;
+    background-color: #9219ff;
     width: 100%;
     height: 150px;
     text-align: center;
 }
 
+
 .header h1{
     padding-top: 50px;
 }
+
+
 
 
 .navbar ul{
@@ -20,12 +27,14 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333
+    background-color: #333333;
 }
+
 
 .navbar ul li{
     float: left;
 }
+
 
 .navbar ul li a{
     display: block;
@@ -34,23 +43,30 @@
     padding: 14px 16px;
     text-decoration: none;
 
+
 }
+
 
 .navbar ul li a:hover{
     background-color: #111;
 }
 
+
 .content{
+
 
     width: 100%;
 
+
     height: 350px;
 }
+
 
 .right{
     width:55%;
     float: left;
 }
+
 
 .card{
     width: 30%;
@@ -60,19 +76,85 @@
     margin-left: 30px;
 }
 
+
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
+
 .caption{
     padding: 2px 16px;
 }
+
 
 img{
     width: 200px;
     height: 200px;
 }
 
+
 .footer{
 
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li{
+    float: left;
+}
+
+
+
+
+li a, .dropbtn{
+    color: white;
+    display: inline-block;
+    text-center: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover, dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+
+li.dropdown{
+    display: inline-block;
+}
+
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
