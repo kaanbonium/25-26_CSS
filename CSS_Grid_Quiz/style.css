@@ -36,11 +36,10 @@
 
 .main-content {
     grid-column: 2;
-    width: 95%;
-    margin: auto;
-    padding: 50px;
+    padding: 20px;
+    text-align: left;
     background-color: #EDEDED !important;
-    height: 400px;
+    height: 460px;
     font-size: 20px;
     grid-row: 2;
 
