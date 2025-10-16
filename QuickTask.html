@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Task</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+                'header header header header header'
+                'navbar navbar navbar navbar logo'
+                'leftbar main main main rightbar'
+                'footer footer footer footer footer';
+            gap: 10px;
+
+            /*
+            border: 50000px solid black;
+             */
+        }
+
+
+        .thing1{
+            grid-area: header;
+            background-color: blue;
+        }
+
+        .thing2{
+            grid-area: navbar;
+            background-color: red;
+        }
+
+        .thing3{
+            grid-area: logo;
+            background-color: green;
+        }
+
+        .thing4{
+            grid-area: leftbar;
+            background-color: purple;
+        }
+        .thing5{
+            grid-area: main;
+            background-color: gray;
+        }
+
+        .thing6{
+            grid-area: rightbar;
+            background-color: coral;
+        }
+
+        .thing7{
+            grid-area: footer;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="thing1">
+            <p>Header<p>
+
+        </div>
+
+        <div class="thing2">
+            <p>Navbar</p>
+        </div>
+
+        <div class="thing3">
+            <p>Logo</p>
+        </div>
+
+        <div class="thing4">
+            <p>Leftbar</p>
+        </div>
+
+        <div class="thing5">
+            <p>Main</p>
+        </div>
+
+        <div class="thing6">
+            <p>Rightbar</p>
+        </div>
+
+        <div class="thing7">
+            <p>Footer</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
