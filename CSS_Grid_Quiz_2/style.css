@@ -1,0 +1,139 @@
+/* Add all your styles here */
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-areas:
+
+        'header header header header header header'
+        'navbar main main  main main links'
+        'footer footer footer footer footer footer';
+
+    padding: 100px;
+
+    background-color: lightgray;
+
+    gap: 25px 25px;
+
+}
+
+
+.site-header{
+
+    grid-area: header;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    background-color: lightblue;
+
+}
+
+
+.main-nav {
+
+    grid-area: navbar;
+
+    background-color: #DEDEDE;
+
+    padding: 50px;
+    font-size: 20px;
+
+
+    width: 240px;
+
+}
+
+
+.main-content {
+
+    grid-area: main;
+
+    text-align: left;
+
+    background-color: #EDEDED;
+
+    font-size: 20px;
+
+    height: 500px;
+
+}
+
+
+.site-sidebar {
+
+    grid-area: links;
+
+    background-color: #DEDEDE;
+
+    padding: 50px;
+
+    font-size: 20px;
+
+}
+
+
+.site-footer {
+
+    grid-area: footer;
+
+    align-content: center;
+
+    font-size: 25px;
+
+    background-color: #7183E0;
+
+    height: 125px;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+
+        .site-header { grid-area: 1/ span 6;}
+
+        .main-nav { grid-area: 2/ span 6;}
+
+        .main-content { grid-area: 3/ span 6;}
+
+        .site-sidebar { grid-area: 4/ span 6;}
+
+        .site-footer { grid-area: 5/ span 6;}
+
+    }
+
+}
+
+
+@media only screen and (min-width: 850px){
+    body{
+
+        .site-header { grid-area: 1/ span 6;}
+
+        .main-nav { grid-area: 2/ span 1;}
+
+        .main-content { grid-area: 2/ span 4;}
+
+        .side-sidebar { grid-area: 2/ span 1;}
+
+        .site-footer { grid-area: 3/ span 6;}
+
+    }
+
+}
+
+
+@media only screen and (orientation:landscape){
+
+    body{
+
+        background-color: black !important;
+
+        color: white;
+
+    }
+
+}
