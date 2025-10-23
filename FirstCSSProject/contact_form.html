@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+
+    <style>
+    .container{
+        grid-template-areas:
+        'header header header header header'
+        'name text text text restart'
+        'email text text text restart'
+        'number text text text restart'
+        'reason text text text restart'
+        'submit'
+    }
+
+    .header{
+        grid-area: header;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+
+    .name{
+        grid-area: name;
+    }
+
+    .email{
+        grid-area: email;
+    }
+
+    .number{
+        grid-area: number;
+    }
+
+    .reason{
+        grid-area: reason;
+    }
+
+    .text{
+        grid-area: text;
+    }
+
+
+
+    .restart{
+        grid-area: restart;
+    }
+
+    .submit{
+        grid-area: submit;
+    }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Contact Form</h1>
+    </div>
+
+    <div class="text">
+
+    </div>
+
+
+    <div class="name">
+        <h2>Name:</h2>
+    </div>
+
+    <div class="email">
+        <h2>Email:</h2>
+    </div>
+    <div class="number">
+        <h2>Phone Number (Optional):</h2>
+    </div>
+    <div class="reason">
+        <h2>Reason of Contact:</h2>
+    </div>
+
+
+
+    <div class="restart">
+
+    </div>
+
+    <div class="submit">
+        <h3>Submit here when you are done.</h3>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,160 +1,92 @@
-.container{
-    width: 1080px;
-    margin: auto;
-    padding: 10px;
-    display: grid;
-    grid-template-columns:1fr 3fr;
-}
-
-
-.header{
-    background-color: #9219ff;
-    width: 100%;
-    height: 150px;
+*{
+    box-sizing: border-box;
     text-align: center;
 }
 
-
-.header h1{
-    padding-top: 50px;
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'navbar navbar navbar navbar navbar navbar navbar'
+    'sidebar sidebar main main main main main'
+    'tips tips main main main main main'
+    'tips tips links links links links links'
+    'footer footer footer footer footer footer footer';
+    gap: 5px 5px;
 }
 
 
+.grid-header{
+    grid-area: header;
+    background-color: red;
+    padding: 25px
+}
 
 
-.navbar ul{
+.navbar{
+    grid-area: navbar;
+    background-color: lightblue;
+
+
+}
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
 }
 
-
-.navbar ul li{
+ul li{
     float: left;
 }
 
-
-.navbar ul li a{
+ul li a{
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-
 
 }
 
-
-.navbar ul li a:hover{
+ul li a:hover{
     background-color: #111;
 }
 
 
-.content{
 
+.sidebar{
+    grid-area: sidebar;
+    background-color: green;
+    padding: 25px
 
-    width: 100%;
+}
 
+.sidebarImg{
+    height:  200px;
+    width: auto;
 
-    height: 350px;
+}
+
+.main{
+    grid-area: main;
+    background-color: purple;
+    padding: 25px;
 }
 
 
-.right{
-    width:55%;
-    float: left;
+.tips{
+    grid-area: tips;
+    background-color: lightblue;
+    padding: 25px;
 }
 
-
-.card{
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-    transition: .3s;
-    float: left;
-    margin-left: 30px;
+.links{
+    grid-area: links;
+    background-color: lightgrey;
+    padding: 25px;
 }
-
-
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-}
-
-
-.caption{
-    padding: 2px 16px;
-}
-
-
-img{
-    width: 200px;
-    height: 200px;
-}
-
 
 .footer{
-
-
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-
-li{
-    float: left;
-}
-
-
-
-
-li a, .dropbtn{
-    color: white;
-    display: inline-block;
-    text-center: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-li a:hover, dropdown:hover .dropbtn{
-    background-color: red;
-}
-
-
-li.dropdown{
-    display: inline-block;
-}
-
-
-.dropdown-content{
-    display:none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left
-}
-
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-
-.dropdown:hover .dropdown-content{
-    display: block;
+    grid-area: footer;
+    background-color: grey;
+    padding: 25px;
 }
