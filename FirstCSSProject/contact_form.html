@@ -3,97 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Form</title>
-
+    <link rel="stylesheet" href="mainstyles.css">
     <style>
-    .container{
-        grid-template-areas:
-        'header header header header header'
-        'name text text text restart'
-        'email text text text restart'
-        'number text text text restart'
-        'reason text text text restart'
-        'submit'
-    }
 
-    .header{
-        grid-area: header;
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-
-    .name{
-        grid-area: name;
-    }
-
-    .email{
-        grid-area: email;
-    }
-
-    .number{
-        grid-area: number;
-    }
-
-    .reason{
-        grid-area: reason;
-    }
-
-    .text{
-        grid-area: text;
-    }
-
-
-
-    .restart{
-        grid-area: restart;
-    }
-
-    .submit{
-        grid-area: submit;
-    }
     </style>
 
 
 </head>
 <body>
 
-<div class="container">
-    <div class="header">
+<div class="grid-container">
+    <div class="grid-header">
         <h1>Contact Form</h1>
     </div>
 
-    <div class="text">
+
+    <div class="navbar">
+        <ul>
+            <li><a href="Lookahead.html">Lookahead</a></li>
+            <li><a href="Algorithms.html">Algorithms</a></li>
+            <li><a href="Hand_Placement.html">Hand Placement</a></li>
+            <li><a href="contact_form.html">Contact Us</a></li>
+            <li><a href="main.html">Go Back</a></li>
+        </ul>
+
 
     </div>
 
 
-    <div class="name">
-        <h2>Name:</h2>
+
+        <div class="sidebar">
+            <label for="name" >Name: </label>
+            <input type="text" name="data" id="name" placeholder="N/A"><br />
+            <label for="email">Email:
+            </label><input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"><br />
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="(999-999-9999)"><br />
+            <input type="checkbox" name="emailConsent" id="emailConsent" checked="checked">
+
+        <!-- Radio Buttons
+            Name must be the same to link.
+            Value and id should reflect the actual choice. -->
+
+            <input type="date" name="dob" id="dob">
+            <label for="dob">Date of Birth:</label><br/>
+
+            <!-- Dropdown Menu -->
+            <label for="department">Select Department</label>
+            <select name="department" id="department">
+                <option value="criticism">Criticism</option>
+                <option value="unhelpful">Unhelpfulness</option>
+                <option value="other">Other</option>
+            </select><br/>
+
+        </div>
+        <!-- Text Area -->
+
+    <div class="main">
+        <form action="#" method="post">
+            <label for="question">Describe your inquiry:</label>
+            <textarea name="question" id="question" rows="10" cols="50">Please list your concerns below:
+            What device do you have?
+
+            What problem is being caused?
+
+            What have you tried?</textarea>
+
+
+
+
+            <input type="submit">
+        </form>
     </div>
 
-    <div class="email">
-        <h2>Email:</h2>
-    </div>
-    <div class="number">
-        <h2>Phone Number (Optional):</h2>
-    </div>
-    <div class="reason">
-        <h2>Reason of Contact:</h2>
-    </div>
 
-
-
-    <div class="restart">
+    <div class="footer">
+        <br/>
+        <p>
+            Click below to go to the Official Cube Association: <br/>
+            <a href="https://www.worldcubeassociation.org">World Cube Association</a>
+        </p>
+        <br/>
+        <p>Copyright © 2025 Josiah Manuel Lugo. All rights reserved.</p>
+        <p>Contact 347-775-8666 for more details.</p>
 
     </div>
-
-    <div class="submit">
-        <h3>Submit here when you are done.</h3>
-    </div>
-
 
 </div>
-
 
 </body>
 </html>

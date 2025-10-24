@@ -18,15 +18,29 @@
 
 .grid-header{
     grid-area: header;
-    background-color: red;
-    padding: 25px
+
+    padding: 25px;
+    background-color: black;
+    color: white;
 }
 
 
-.navbar{
+.navbar {
     grid-area: navbar;
-    background-color: lightblue;
+    background-color: black;
+    color: white;
 
+
+
+.a {
+    text-decoration: none;
+}
+
+
+
+.navbar > li{
+    text-decoration: none;
+}
 
 }
 ul{
@@ -48,14 +62,14 @@ ul li a{
 }
 
 ul li a:hover{
-    background-color: #111;
+    background-color: #fff;
 }
 
 
 
 .sidebar{
     grid-area: sidebar;
-    background-color: green;
+    background-color: lightgrey;
     padding: 25px
 
 }
@@ -68,14 +82,14 @@ ul li a:hover{
 
 .main{
     grid-area: main;
-    background-color: purple;
+    background-color: lightgrey;
     padding: 25px;
 }
 
 
 .tips{
     grid-area: tips;
-    background-color: lightblue;
+    background-color: lightgrey;
     padding: 25px;
 }
 
