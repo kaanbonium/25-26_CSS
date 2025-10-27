@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     text-align: center;
+    text-decoration: none;
 }
 
 .grid-container{
@@ -27,7 +28,7 @@
 
 .navbar {
     grid-area: navbar;
-    background-color: black;
+    background-color: gray;
     color: white;
 
 
@@ -70,7 +71,8 @@ ul li a:hover{
 .sidebar{
     grid-area: sidebar;
     background-color: lightgrey;
-    padding: 25px
+    padding: 25px;
+
 
 }
 
